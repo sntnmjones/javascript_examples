@@ -1,0 +1,15 @@
+function factorialize(num) {
+  var product = 1;
+  
+  if (num === 0) // if number passed in is '0'
+    product = 1;
+  else {
+    var i = num;
+    while (i > 0) {
+      if  (i - 1 !== 0) // checking for 0 so it will not multiply by 0
+        product *= i;
+      i--;
+    }
+  }
+  return product;
+}

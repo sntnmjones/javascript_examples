@@ -8,3 +8,6 @@ A function that will take an integer and return the product after doing factoral
 
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/palindrome"><h2>palindrome</h2></a>
 A function that turns a string into an array, removes any non-letter/number, and checks to see if it is a palindrome.<br>
+
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/longestWordInString"><h2>longestWordInString</h2></a>
+A function that returns the length of the longest word in a string.<br>

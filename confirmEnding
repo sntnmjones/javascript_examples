@@ -1,0 +1,10 @@
+function confirmEnding(str, target) {
+  var targetLength = target.length;
+  var start = str.length - targetLength;
+  var end = str.length;
+  
+  if (str.substring(start, end) === target)
+    return true;
+  else
+    return false;
+}

@@ -23,3 +23,6 @@ A function that will take a string (with no error checking) and reverse it, usin
 
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/titleCase"><h2>titleCase</h2></a>
 A function that takes a string regardless of case, and returns it in "Title Case".<br>
+
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/truncateString"><h2>truncateString</h2></a>
+A function that takes a string and truncates it at the index specified and appends "...".<br>

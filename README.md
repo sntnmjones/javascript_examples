@@ -1,5 +1,8 @@
 # javascript_examples
 Sample files for vanilla javascript
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/confirmEnding"><h2>confirmEnding</h2></a>
+A function that verifies the end of a string with the target passed in.<br>
+
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/factorialize"><h2>factoral</h2></a>
 A function that will take an integer and return the product after doing factoral math.<br>
 

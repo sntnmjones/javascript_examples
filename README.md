@@ -3,6 +3,9 @@ Sample files for vanilla javascript
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/factorialize"><h2>factoral</h2></a>
 A function that will take an integer and return the product after doing factoral math.<br>
 
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/largestNumInSubArrays"><h2>largestNumInSubArrays</h2></a>
+A function that looks through a 2D array of ints and returns the largest int in each".<br>
+
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/longestWordInString"><h2>longestWordInString</h2></a>
 A function that returns the length of the longest word in a string.<br>
 

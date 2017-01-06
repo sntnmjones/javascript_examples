@@ -25,7 +25,7 @@ A function that returns a string that is multiplied by the int passed in.<br>
 A function that will take a string (with no error checking) and reverse it, using an array.<br>
 
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/slasher"><h2>slasher</h2></a>
-A function that <br>
+A function that takes the number passed in and takes that many elements off the beginning of the array passed in.<br>
 
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/titleCase"><h2>titleCase</h2></a>
 A function that takes a string regardless of case, and returns it in "Title Case".<br>

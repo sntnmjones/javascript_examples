@@ -1,0 +1,80 @@
+function mutations(arr) {
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  
+  if (arr[0] === arr[1])  // if the words are the same
+    return true;
+  else {
+    var arrayA = arr[0].split(''); // turns the strings into arrays
+    var arrayB = arr[1].split('');
+    
+    arrayA.sort(); // sorts the arrays ASC
+    arrayB.sort();
+    
+    var arrayAlength = arrayA.length;
+    var arrayBlength = arrayB.length;    
+    
+    /**********************************
+    ** if arrays are the same length **
+    **********************************/    
+    if (arrayAlength === arrayBlength) {
+      arrayA = arrayA.join('');
+      arrayB = arrayB.join('');
+      
+      if (arrayA === arrayB)
+        return true;
+      else
+        return false;
+    }
+    /*************************************
+    ** if arrayA is shorter than arrayB **
+    *************************************/
+    else if (arrayAlength < arrayBlength) {
+      var i = 0;
+      var j = 0;
+      var count = 0; // var to keep track of matches
+
+      while (i < arrayA.length) {
+        while (j < arrayB.length) {
+          if (arrayA[i] === arrayB[j]) {
+            arrayA.splice(i, 1); // remove letter from smaller array
+            i = 0; // reset iterators
+            j = 0;
+            count++; // count match
+          }
+          else if (count === arrayAlength)
+            return true;
+          else 
+            j++; // move to next pos in arrayB
+        }
+        i++; // move to next pos in arrayA
+      }
+      return false;
+    }
+    /*************************************
+    ** if arrayB is shorter than arrayA **
+    *************************************/
+    else {
+      var i = 0;
+      var j = 0;
+      var count = 0; // var to keep track of matches
+
+      while (i < arrayB.length) {
+        while (j < arrayA.length) {
+          if (arrayB[i] === arrayA[j]) {
+            arrayB.splice(i, 1); // remove letter from smaller array
+            i = 0; // reset iterators
+            j = 0;
+            count++; // count match
+          }
+          else if (count === arrayBlength)
+            return true;
+          else 
+            j++; // move to next pos in arrayA
+        }
+        i++; // move to next pos in arrayB
+      }
+      return false;
+    }
+  }
+}

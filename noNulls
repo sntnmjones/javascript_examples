@@ -1,0 +1,7 @@
+function noNulls(arr) {
+  function isInvalid(value) {
+    if (value !== false && value !== null && value !== 0 && value !== "" && value !== undefined && value !== NaN)
+      return value;
+  }
+  return arr.filter(isInvalid);
+}

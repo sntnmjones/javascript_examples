@@ -24,6 +24,9 @@ A function that takes an array as an argument, looks through and removes any nul
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/palindrome"><h2>palindrome</h2></a>
 A function that turns a string into an array, removes any non-letter/number, and checks to see if it is a palindrome.<br>
 
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/removeArgs"><h2>removeArgs</h2></a>
+A function that removes arguments that are passed in after an array. For example, removeArgs([1, 2, 3], 3) would remove the 3 from the array.<br>
+
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/removeDuplicates"><h2>removeDuplicates</h2></a>
 A function that removes duplicates from an array that is passed in as an argument.<br>
 

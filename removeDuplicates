@@ -1,0 +1,16 @@
+  function removeDuplicates(arr) {
+    while (i < arr.length) {
+      j = i + 1;
+      while (j < arr.length) {
+        if (arr[i] === arr[j]) {
+          arr.splice(j, 1);
+          if (i !== 0)
+            i -= 1;
+          j = i + 1;
+        }
+        j++;
+      }
+      i++;
+    }  
+    return arr;  
+  }

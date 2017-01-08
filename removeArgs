@@ -1,0 +1,22 @@
+function removeArgs(arr) {
+  var args = Array.from(arguments); // turns the arguments into an array
+  var i = 1;
+  var j = 0;
+
+  while (i < args.length) {
+    while (j < arr.length) {
+      if (args[i] === arr[j]) {
+        arr.splice(j, 1);
+        if (j !== 0)
+          j -= 1;
+        else
+          j = 0;
+      }
+      else
+        j++;
+    }
+    i++;
+    j = 0;
+  }
+  return arr;
+}

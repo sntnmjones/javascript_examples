@@ -3,6 +3,9 @@ Sample files for vanilla javascript
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/chunkArrayInGroups"><h2>chunkArrayInGroups</h2></a>
 A function that takes a single array and turns it into a 2D array of subarrays in the size passed in as an argument.<br>
 
+<a href="https://github.com/sntnmjones/javascript_examples/blob/master/cipher13"><h2>cipher13</h2></a>
+A function that takes a string a shifts capital letters 13 positions to the left.<br>
+
 <a href="https://github.com/sntnmjones/javascript_examples/blob/master/confirmEnding"><h2>confirmEnding</h2></a>
 A function that verifies the end of a string with the target passed in.<br>
 

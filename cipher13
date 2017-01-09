@@ -1,0 +1,32 @@
+function cipher13(str) {
+  /**********************************************
+  ** Function that shifts only capital letters **
+  **********************************************/
+  // A = 65, Z = 90
+  function shift(charCode) {
+    charCode -= 13;
+    if (charCode < 65)
+      charCode = 91 - (65 - charCode); // this takes the difference and subtracts it from the other end of the alphabet
+    return charCode;
+  }
+  
+  /*********************
+  ** primary function **
+  *********************/
+  var tempArray = str.split(''); // turns str into array
+  var encryptedArray = [];
+  
+  for (var i = 0; i < tempArray.length; i++) {
+    var charCode = str.charCodeAt(i); // returns UTF code
+    var newLetter = "";
+    
+    if (charCode >= 65 && charCode <= 90) // if capital letter, shift
+      charCode = shift(charCode);
+      
+    newLetter = String.fromCharCode(charCode); // turns code back to letter
+    encryptedArray.push(newLetter);
+  }
+  
+  encryptedArray = encryptedArray.join(''); // turns array back into string
+  return encryptedArray;
+}
